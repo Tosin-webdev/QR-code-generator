@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Input Form</title>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <header>QR code generator</header>
+    <div class="container">
+
+        <div class="input-container">
+            <!-- Input for URL --> 
+        <div>
+            <form id="generate-form">
+                <input type="text" id="url" placeholder="Enter URL"> <br/>
+
+                <!-- Dropdown list -->
+            <select id="size">
+                <option value="100">100x100</option>
+                <option value="200">200*200</option>
+                <option value="300">300*300</option>
+                <option value="400">400*400</option>
+                <option value="500">500*500</option>
+                <option value="600">600*600</option>
+                <option value="700">700*700</option>
+            </select> <br/>
+
+                <!-- Button -->
+                <button type="submit">Generate</button>
+            </form>
+        </div>
+        <div id="qrcode" class="m-auto"></div>
+         <button id="downloadBtn" style="display:none;">Download QR Code</button>
+    </div>
+    </div>
+</body>
+</html>
